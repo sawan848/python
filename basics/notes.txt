@@ -1,0 +1,127 @@
+object oriented python
+=> everything is an object,even the number
+=> other language employ primitives(non-object data) 
+
+in the pythons,
+what is an Object?
+    an object is a unit of data(having one or more attributes),
+    of a particular class or type,with associated functionality(method).
+
+    an object is an entity that hold data  and form of attribute whether it is type or class whethere it is associated with functionality in the form of method
+
+    primitives,like integer are object in python.the type function any python objects
+
+    ex:
+            myint=5
+            mystr='hello'
+
+            print (type(myint))
+            print (type(mystr))
+    in the output of this example is 
+        
+    <class 'int'>
+    <class 'str'>
+    that means the even integer have the class that means 
+    myint class is int and same as the string it is belong to string class
+
+    class:
+            class is a kind of factory for an instances.this factory contanins the blueprint which describe
+             how to make instances or objects as they`re also called are constructed form the class in most 
+             cases multiple instances can be constructed 
+                            again the class is the factory and the blueprint and the instances is a kind of
+                            widget(visit) coming out of the factory so the structure of each instances will be
+                            identical to every other instances as we show in the upper example.
+                            
+            every instances has a set of attributes these attributes are defined in the class so every instances
+            of a particular class is expected to have the same attribute in code example:
+
+                var ='hello,world!'
+                print(type(var))                    <class 'str'>
+                print(var.upper())                  #hello world
+
+                we have a string which we`re labeling var as may we know any string will have access to the
+                upper method thus any string that is created is part of the string class and therefore has an
+                upper method the string class defines upper and thus all string constructed will also have 
+                access to that callable attribute remember ,i`m calling a method  or callable attribute.
+
+                so every method is an attribute but not every attribute is a method type is just a term meaning the
+                type of object which really means which class the object comes form we may say that an instances
+                is of type string or we may say that it came form the string class remember we define an 
+                object as a unit of data of a particular type associated with functionality we`ll get to the data
+                in a little bit.let`s review the term method a method is really a  function defined in the class
+                that can be used by the instances so look at the example what type of the object of the var ,it`s 
+                string so we can say that it is of the string class and that it is of type string we can also call it 
+                a string object or a string instance and on the last line we can say that we are calling upper method
+                on the string object or instance 
+
+                =>class :a blueprint for an instance
+                =>instance :a constructed object of the class
+                =>type :indicates the class the instance belongs to
+                =>attribute :any object value :object.attribute
+                =>method  :a callable attribute' defined in the class
+
+    Instance Method and attribute
+        =>a car can be a class of object
+        =>the car class provides the blueprint for a car object 
+        =>each instance of a car does the same things(methods)
+        =>but each car instance has its own state (attributes)
+
+        each car can be start ,stop and honk in code these would be rendered as a method but once they 
+        come out of the factory each car has other attributes which are specific to that car the car 
+        speed for example or whether its door are open and closed.once the instance is constructed 
+        it can set its own value to its attributes what you should notice is that the type of value
+        that are being held is the same between each of the instances in the other word each have the speed
+        attribute the all have a left door attribute or all have the right door attribute but the state of those 
+        values is different  for each car because each car is beling used differently so there`s
+        a difference between the blueprint which is defined in the class or all the factory and state of each
+        instance which is defined by its used.
+
+
+Instance methods
+        => instance method are variable defined in the class 
+        => they are accessed through the instance:
+                    instance.method()
+        => when called through the instance ,the instance is automatically passed as1st
+            argument to the method 
+        => because of the automatic passing of the instance, instance methods are known as "bound
+            methods,i.e. bound to the instance upon which it is called
+
+6 Point TO understanding classes
+        1.=> an instance of a class known what class it`s form
+        2.=> vars define in the class are available to the instance
+        3.=> a method on an instance passed instance as the argument to the method(named in self in the method)
+        4.=> instance have their own data, called instance attributes
+        5.=> variables defined in the class are called attributes
+        6.=> when we read an attribute,python looks fot it first in the insatance and then the class
+
+
+Instance Attributes("STATE")
+        =>we have seen that an an insatance can access variable defined in the class
+        =>an insatance can also get and set values in itself
+        =>because these values change according to what happens to the object we call these values state
+        =>Instance data takes the form of insatance attribute value set and accessed through object.attribute syntax
+
+Abstract Base Classes
+        =>an Abstract class is a kind of "model" for other classes to be defined.it is not designed to construct insatance but subclassed by regular classes
+        => Abstract classes can define an interface,or methods that just ve be implemented by its subclasses
+
+Method Overloading:
+        =>when working in a child class we can choose to implemented parent class methods in different ways
+          implement parent class methods in different ways
+          >Inherit :- simply use the parent class defined method
+          >Override/Overload :- provide child`s own version of a method 
+          >Extend :- do work in addition to that in parent`method
+          >provide :- implement abstract method that parent requires
+
+Composition vs Instance:
+        ->insatance can be brittle (a change may require change elsewhere)
+        ->Decoupled code is classes,functions,etc that work 
+                independently  and don`t depend on one another
+        ->As long as the interface is maintained ,interactions between classes will work
+        ->not chaecking or requiring particular type is polymorphic and pythonic
+
+explained.ai/matrix-calculas
+        
+        Object Serialization
+                        :  which means different store object in disk.
+                         Serialization means persistent storage means storing data in execution of programme

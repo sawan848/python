@@ -1,0 +1,5 @@
+secret_password=^$#&^&
+username=milanoid
+password=secret
+hostname=localhost
+port=port

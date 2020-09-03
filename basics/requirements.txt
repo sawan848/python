@@ -1,0 +1,3 @@
+first install python
+second create virtual environment
+start environment {}
